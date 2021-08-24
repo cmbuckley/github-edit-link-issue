@@ -6,6 +6,12 @@ paginated: true
 
 <p>The output of <code>{% raw %}{% github_edit_link %}{% endraw %}</code> is <strong>{% github_edit_link %}</strong>.</p>
 
+<ul>
+  <li><code>page.name</code>: <strong>{{ page.name }}</strong></li>
+  <li><code>page.path</code>: <strong>{{ page.path }}</strong></li>
+  <li><code>page.url</code>: <strong>{{ page.url }}</strong></li>
+</ul>
+
 <nav>
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path | relative_url }}" rel="prev">Previous page</a>
