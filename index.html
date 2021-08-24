@@ -8,9 +8,9 @@ paginated: true
 
 <nav>
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" rel="prev">Previous page</a>
+    <a href="{{ paginator.previous_page_path | relative_url }}" rel="prev">Previous page</a>
   {% endif %}
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" rel="next">Next page</a>
+    <a href="{{ paginator.next_page_path | relative_url }}" rel="next">Next page</a>
   {% endif %}
 </nav>

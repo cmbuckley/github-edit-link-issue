@@ -1,8 +1,9 @@
 title: Issue with GitHub metadata
-repository: "owner/repo"
+baseurl: "/github-edit-link-issue"
 
 paginate: 1
 paginate_path: "page/:num/"
+repository: "owner/repo"
 
 plugins:
   - jekyll-github-metadata
