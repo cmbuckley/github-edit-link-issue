@@ -1,0 +1,9 @@
+title: Issue with GitHub metadata
+repository: "owner/repo"
+
+paginate: 1
+paginate_path: "page/:num/"
+
+plugins:
+  - jekyll-github-metadata
+  - jekyll-paginate

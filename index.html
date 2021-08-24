@@ -1,0 +1,16 @@
+---
+layout: default
+paginated: true
+---
+<h1>{% if paginator.page == 1 %}Recent {% endif %}Posts{% if paginator.page > 1 %} (Page {{ paginator.page }}){% endif %}</h1>
+
+<p>The output of <code>{% raw %}{% github_edit_link %}{% endraw %}</code> is <strong>{% github_edit_link %}</strong>.</p>
+
+<nav>
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" rel="prev">Previous page</a>
+  {% endif %}
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" rel="next">Next page</a>
+  {% endif %}
+</nav>
