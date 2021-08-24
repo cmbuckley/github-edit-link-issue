@@ -11,4 +11,4 @@ bundle install
 bundle exec jekyll serve
 ```
 
-Then open https://127.0.0.1/page/2/
+Then open https://127.0.0.1/github-edit-link-issue/page/2/
